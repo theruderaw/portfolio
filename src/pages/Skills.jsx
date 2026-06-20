@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SkillCategory from '../components/SkillCategory'
+import '../styles/skills.css'
 
 const skillCategories = [
     {
@@ -71,10 +72,10 @@ export default function Skills() {
                 <h2 className="page-title">Technical Skills</h2>
                 <div className="skills-container">
                     {skillCategories.map((cat) => (
-                        <SkillCategory 
-                            key={cat.name} 
-                            name={cat.name} 
-                            skill_dict={cat.skill_dict} 
+                        <SkillCategory
+                            key={cat.name}
+                            name={cat.name}
+                            skill_dict={cat.skill_dict}
                             isOpen={activeCategory === cat.name}
                             onMouseEnter={() => handleActiveChange(cat.name)}
                             onClick={() => handleActiveChange(cat.name)}

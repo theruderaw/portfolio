@@ -1,0 +1,42 @@
+/* Contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #2a2a35;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    padding: 0.75rem 1rem;
+    background: #333;
+    color: #d8d8ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form button:hover {
+    background: #444;
+}
+
+/* Contact info */
+.contact-info {
+    margin: 1rem 0;
+    line-height: 2;
+}

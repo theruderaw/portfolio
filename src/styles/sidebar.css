@@ -1,0 +1,76 @@
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    background: #1e1e24;
+    border-right: 1px solid #333;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.sidebar-header {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.sidebar-header h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar-header p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex-grow: 1;
+}
+
+.sidebar-links a {
+    color: #d8d8ff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.sidebar-links a:hover {
+    background: #333;
+    text-decoration: none;
+}
+
+.sidebar-links a.active {
+    background: #333;
+    color: #ffffff;
+}
+
+.resume-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: #d8d8ff;
+    color: #121212;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.85rem;
+    z-index: 200;
+}
+
+.resume-btn:hover {
+    background: #ffffff;
+    text-decoration: none;
+}

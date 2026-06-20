@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/project.css'
 
 const projects = [
     {
@@ -39,8 +40,8 @@ export default function Projects() {
             <h2 className="page-title">Projects</h2>
             <div className="projects-container">
                 {projects.map((proj) => (
-                    <div 
-                        className={`project-tab ${expandedProject === proj.title ? 'expanded' : ''}`} 
+                    <div
+                        className={`project-tab ${expandedProject === proj.title ? 'expanded' : ''}`}
                         key={proj.title}
                         onClick={() => toggleProject(proj.title)}
                     >

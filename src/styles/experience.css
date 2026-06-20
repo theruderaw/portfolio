@@ -1,0 +1,29 @@
+/* Experience */
+.experience-card {
+    margin-bottom: 1.5rem;
+}
+
+.experience-card h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.experience-card .date {
+    color: #a8a8ff;
+    font-size: 0.9rem;
+}
+
+.experience-card .company {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.experience-card li {
+    margin-bottom: 0.4rem;
+}

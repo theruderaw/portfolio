@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/skills.css'
 
 const skillIconMap = {
     'Python': 'devicon-python-plain colored',
@@ -25,16 +26,16 @@ const skillIconMap = {
     'Postman': 'devicon-postman-plain colored'
 }
 
-export default function SkillCategory({ 
-    name, 
-    skill_dict, 
-    isOpen, 
-    onMouseEnter, 
-    onMouseLeave, 
-    onClick 
+export default function SkillCategory({
+    name,
+    skill_dict,
+    isOpen,
+    onMouseEnter,
+    onMouseLeave,
+    onClick
 }) {
     return (
-        <div 
+        <div
             className={`skill-tab ${isOpen ? 'active' : ''}`}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
@@ -55,8 +56,8 @@ export default function SkillCategory({
                                 <span className="skill-percentage">{level}%</span>
                             </div>
                             <div className="progress-bar-bg">
-                                <div 
-                                    className="progress-bar-fill" 
+                                <div
+                                    className="progress-bar-fill"
                                     style={{ width: `${level}%` }}
                                 ></div>
                             </div>

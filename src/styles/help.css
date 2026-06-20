@@ -1,0 +1,105 @@
+/* Help Button / Game of Life Controls */
+.help-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.help-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #1e1e24;
+    border: 1px solid #333;
+    color: #d8d8ff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.help-btn:hover {
+    background: #2a2a35;
+    border-color: #d8d8ff;
+    transform: scale(1.1);
+}
+
+.help-modal {
+    position: absolute;
+    bottom: 3.2rem;
+    right: 0;
+    width: 280px;
+    background: rgba(30, 30, 36, 0.95);
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+    pointer-events: none;
+}
+
+.help-modal.open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+.help-modal::before {
+    content: '';
+    position: absolute;
+    bottom: -1.2rem;
+    left: 0;
+    right: 0;
+    height: 1.2rem;
+    background: transparent;
+}
+
+.help-modal h4 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.help-modal p {
+    color: #888;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.help-controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.help-controls button {
+    flex: 1;
+    padding: 0.4rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #2a2a35;
+    color: #d8d8ff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.help-controls button:hover {
+    background: #333;
+    border-color: #d8d8ff;
+}
